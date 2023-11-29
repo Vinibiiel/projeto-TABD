@@ -1,5 +1,5 @@
 from connect import Connection
-from models import Prereq, TimeSlot, Advisor, Takes, Student, Teaches, Section, Instructor, Course,Department
+from models import Prereq, TimeSlot, Advisor, Takes, Student, Teaches, Section, Instructor, Course, Department, ClassRoom
 import json
 
 model_map = {
@@ -13,6 +13,7 @@ model_map = {
     'instructor': Instructor('instructor'),
     'course': Course('course'),
     'department': Department('departament'),
+    'classroom': ClassRoom('classroom')
 }
 
 if __name__ == "__main__":

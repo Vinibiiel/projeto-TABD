@@ -179,7 +179,7 @@ class Advisor:
             's_id': s_id,
             'i_id': i_id
         }
-        result = collection.find_one({'s_id': s_id})
+        result = collection.find_one({'s_id': s_id, 'i_id': i_id})
         if not result:
             collection.insert_one(json_obj)
 
