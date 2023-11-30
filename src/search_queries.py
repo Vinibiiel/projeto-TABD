@@ -77,7 +77,7 @@ def query1():
             "_id": 0,
             "Nome do estudante": "$name",
             "Nome do Professor": "$instructor.name",
-            "Nome do Cursp": "$course.title"
+            "Nome do Curso": "$course.title"
         }
     }
 ]

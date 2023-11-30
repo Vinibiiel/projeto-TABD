@@ -12,11 +12,15 @@ CC6240 - TÓPICOS AVANÇADOS DE BANCOS DE DADOS
 - Configurar o script:
     - Primeiro ir até o arquivo connect.py, e colocar o endereço do mongo onde o codigo irá rodar;
 - Rodar os scripts:
-    - Rodar o script de inserção de dados (Se caso for um banco novo)
-    - Rodar o script de seleção dos dados (queries)
+    - Rodar o script de inserção de dados (Se caso for um banco novo):
+        - python insert_data.py
+        - OBS:. Entre na pasta src
+    - Rodar o script de seleção dos dados (queries):
+        - python search_queries.py
+        - OBS:. Entre na pasta src
 
 
 
 #### Observações
-Eu deixei os códigos que usei pra parsear o SQL para json, para que eu pudesse utilizar no pymongoa
+Eu deixei os códigos que usei pra parsear o SQL para json, para que eu pudesse utilizar no pymongo
 O nome do parser é parse_sql. Para fim de curiosidade, utiliza regex

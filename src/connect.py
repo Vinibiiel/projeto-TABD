@@ -1,6 +1,5 @@
 from pymongo import MongoClient
 
-
 # EXEMPLO DE URL LOCAL
 MONGO_URL = "mongodb://localhost:27017/" # INSERIR SUA URL MONGO AQUI
 
