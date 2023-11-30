@@ -70,6 +70,9 @@ def query1():
         }
     },
     {
+        "$limit": 50
+    },
+    {
         "$project": {
             "_id": 0,
             "Nome do estudante": "$name",
@@ -104,6 +107,9 @@ def query2():
     },
     {
         "$unwind": "$instructor"
+    },
+    {
+        "$limit": 50
     },
     {
         "$project": {
@@ -149,6 +155,9 @@ def query3():
             "student_count": {"$sum": 1},
             "avg_salary": {"$avg": "$instructors.salary"}
         }
+    },
+    {
+        "$limit": 50
     },
     {
         "$project": {
@@ -213,6 +222,7 @@ def main():
     for data in result:
         print(data)
 
+    print("\nTodas as queries estão com LIMIT = 50")
     new_connection.close_connection()
     return
 
